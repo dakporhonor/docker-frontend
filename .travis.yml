@@ -7,4 +7,4 @@ before_install:
   - docker build -t dakporhonor/frontend -f Dockerfile.dev .
 
 script: 
-  - docker run -e CI=true dakporhonor/frontend npm run test -- --coverage
+  - docker run -e CI=true dakporhonor/frontend npm run test
